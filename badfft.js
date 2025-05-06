@@ -1,4 +1,4 @@
-function badfft(data){
+export function badfft(data){
     const f = new FFT(data.length)
     const out = f.createComplexArray()
     f.realTransform(out, data)
