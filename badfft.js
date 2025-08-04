@@ -1,3 +1,4 @@
+// this function is original work
 export function badfft(data){
     const f = new FFT(data.length)
     const out = f.createComplexArray()
@@ -25,6 +26,7 @@ export function badfft(data){
     return shifted;
 }
 
+// code below here is not original (the math is crazy)
 
 function FFT(size) {
     this.size = size | 0;
